@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>TASDIK OPEN WORLD V4</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loading"><div class="load-title">TASDIK OPEN WORLD V4</div><div class="bar"><i id="loadbar"></i></div><small>Loading city...</small></div>
+
+<div id="hud">
+  <div class="top">
+    <div>❤️ <b id="health">100</b></div><div>⚡ <b id="stamina">100</b></div>
+    <div>⭐ <b id="wanted">0</b></div><div>₹ <b id="money">500</b></div>
+  </div>
+  <div class="mission"><b id="missionTitle">Welcome</b><span id="missionText">Explore the city.</span><em id="missionReward"></em></div>
+  <div class="stats"><span id="level">Lv 1</span><span id="xp">XP 0/100</span><span id="vehicle">On foot</span><span id="speed">0 km/h</span></div>
+  <canvas id="mini" width="150" height="150"></canvas>
+</div>
+
+<div id="toast"></div>
+<div id="phone" class="panel hidden"><h2>📱 TASDIK PHONE</h2><button data-action="map">🗺 Map</button><button data-action="missions">📋 Missions</button><button data-action="weather">🌦 Weather</button><button data-action="radio">🎵 Radio</button><button data-action="save">💾 Save</button><button data-action="close">Close</button></div>
+
+<div id="panel" class="panel hidden"></div>
+
+<div id="controls">
+  <div id="joy"><div id="stick"></div></div>
+  <div class="rightBtns">
+    <button id="jump">JUMP</button><button id="run">RUN</button>
+    <button id="car">CAR</button><button id="interact">E</button>
+    <button id="phoneBtn">📱</button>
+  </div>
+</div>
+
+<div id="menu" class="panel hidden">
+<h2>⚙ TASDIK MENU</h2>
+<button data-action="customize">👕 Customize</button>
+<button data-action="inventory">🎒 Inventory</button>
+<button data-action="garage">🚗 Garage</button>
+<button data-action="achievements">🏆 Achievements</button>
+<button data-action="close">Close</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
